@@ -1,1 +1,5 @@
 DirectoryIndex index.html
+
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/blog [NC]
+RewriteRule ^ / [R=301,L]
